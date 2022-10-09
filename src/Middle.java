@@ -4,7 +4,8 @@ public class Middle {
         int increase = 1;//увеличить зп на указанный %
         for (int i = 0; i < e.length; i++) {
             Employee employee = e[i];
-            System.out.println("Индексация зп на: " + increase + "% -" + employee.getSurName() + " " + employee.getName() + " " + employee.getLastName() + (employee.getSalary() / 100 * increase + employee.getSalary()));
+            employee.setSalary(employee.getSalary()/100*increase+employee.getSalary());
+            System.out.println("Индексация зп на: " + increase + "% -" + employee.getSurName() + " " + employee.getName() + " " + employee.getLastName() + employee.getSalary());
         }
     }
 

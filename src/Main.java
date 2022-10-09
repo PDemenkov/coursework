@@ -89,16 +89,12 @@ public class Main {
         int total = 0;
         for (int i = 0; i < e.length; i++) {
             total = total + e[i].getSalary();
-            average = total / e.length;
         }
+        average = total / e.length;
         System.out.println("Средняя сумма зп " + average);
     }
 
     public static void printEmployees(Employee[] e) { //Получить список всех сотрудников со всеми имеющимися по ним данными (вывести в консоль значения всех полей (toString)).
-        for (Employee employee : e) {
-            if (employee != null) {
-            }
-        }
         System.out.println(Arrays.toString(e));
     }
 }
