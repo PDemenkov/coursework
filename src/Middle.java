@@ -1,3 +1,6 @@
+import java.util.Collection;
+import java.util.Collections;
+
 public class Middle {
     public static void increaseSalary(Employee[] e) { ///Проиндексировать зарплату (вызвать изменение зарплат у всех сотрудников на величину аргумента в %).
 
